@@ -1,9 +1,9 @@
 # base-demo
 springboot基础项目
 
-0.springboot
-1.jdk8
-2.maven
+0.springboot <br/>
+1.jdk8 <br/>
+2.maven <br/>
 3.模块化项目,适用于微服务
 4.lombok
 5.aop

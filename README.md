@@ -1,6 +1,10 @@
 # base-demo
 springboot基础项目
 
+
+<p style="font-family:'楷体';color:red">
+This text is in Verdana and red 你好</p>
+
 <div style = "color:">项目已集成工具列表</div> 
 0.springboot <br/>
 1.jdk8 <br/>

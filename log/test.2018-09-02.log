@@ -1,0 +1,543 @@
+2018-09-02 00:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 00:01:29.091 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 01:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 01:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 02:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 02:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 03:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 03:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 04:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 04:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 05:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 05:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 06:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 06:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 07:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 07:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 07:18:00.054 [pool-6-thread-1] INFO  com.xiaolusenlin.core.task.SmsTask -短信发送成功：{"id":1423,"memberId":11523,"phone":"18013506590","smsTemplate":"SMS_138073243","sourceCode":"2018082302460400011523"}
+2018-09-02 08:00:00.404 [pool-6-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler -Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.xiaolusenlin.core.task.CreateOrderTask.sendOrderRemindSMS(CreateOrderTask.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-02 08:00:00.710 [pool-6-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler -Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.xiaolusenlin.core.task.CreateOrderTask.autoCreateOrder(CreateOrderTask.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-02 08:00:02.967 [pool-6-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler -Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl.removeItem(FOrderItemServiceImpl.java:309)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl.removeOrderItems(FOrderItemServiceImpl.java:285)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl.removeOrderItems(FOrderItemServiceImpl.java:278)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl$$FastClassBySpringCGLIB$$53b8490.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl$$EnhancerBySpringCGLIB$$2f59db07.removeOrderItems(<generated>)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl$$FastClassBySpringCGLIB$$53b8490.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl$$EnhancerBySpringCGLIB$$b9709a05.removeOrderItems(<generated>)
+	at com.xiaolusenlin.core.task.CreateOrderTask.findDepositOrder(CreateOrderTask.java:142)
+	at com.xiaolusenlin.core.task.CreateOrderTask.rollBack48hOrder(CreateOrderTask.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-02 08:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 08:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 09:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 09:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 10:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 10:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 11:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 11:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 11:40:00.248 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018083014153600011248
+2018-09-02 11:40:00.248 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86143,ReleaseTime:2018-08-31 11:33:58,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.570 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86144,ReleaseTime:2018-08-31 11:34:01,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.618 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86145,ReleaseTime:2018-08-31 11:34:04,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.662 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86147,ReleaseTime:2018-08-31 11:37:44,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.703 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86148,ReleaseTime:2018-08-31 11:37:50,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.743 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86149,ReleaseTime:2018-08-31 11:37:51,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.783 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86150,ReleaseTime:2018-08-31 11:37:52,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.821 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86152,ReleaseTime:2018-08-31 11:38:41,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.857 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86153,ReleaseTime:2018-08-31 11:38:43,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.893 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86154,ReleaseTime:2018-08-31 11:38:44,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.928 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86155,ReleaseTime:2018-08-31 11:38:45,Now:2018-09-02 11:40:00
+2018-09-02 11:40:00.962 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86156,ReleaseTime:2018-08-31 11:38:46,Now:2018-09-02 11:40:00
+2018-09-02 12:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 12:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 13:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 13:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 14:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 14:01:29.091 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  [1] sessions were stopped.
+2018-09-02 14:20:00.236 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018082316144100011538
+2018-09-02 14:20:00.236 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2047,ReleaseTime:2018-08-31 14:16:21,Now:2018-09-02 14:20:00
+2018-09-02 14:30:00.278 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018082316144100011538
+2018-09-02 14:30:00.278 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2048,ReleaseTime:2018-08-31 14:22:49,Now:2018-09-02 14:30:00
+2018-09-02 14:30:00.379 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2049,ReleaseTime:2018-08-31 14:25:24,Now:2018-09-02 14:30:00
+2018-09-02 14:40:00.249 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018082316144100011538
+2018-09-02 14:40:00.249 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2050,ReleaseTime:2018-08-31 14:39:43,Now:2018-09-02 14:40:00
+2018-09-02 14:40:00.344 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2051,ReleaseTime:2018-08-31 14:39:51,Now:2018-09-02 14:40:00
+2018-09-02 15:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 15:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 15:26:01.796 [http-nio-9090-exec-1] ERROR c.x.config.BaseExceptionHandler -系统发生异常了---------》权限问题！
+2018-09-02 15:26:07.918 [http-nio-9090-exec-5] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAll方法，
+参数列表:[]
+耗时：4
+操作人：0
+2018-09-02 15:26:07.958 [http-nio-9090-exec-9] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAllDesigner方法，
+参数列表:[]
+耗时：44
+操作人：0
+2018-09-02 15:26:12.872 [http-nio-9090-exec-7] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.LoginController的login方法，
+参数列表:["admin","admindev"]
+耗时：19
+操作人：1
+2018-09-02 15:26:13.262 [http-nio-9090-exec-3] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.ManagerViewController的getUserMenu方法，
+参数列表:[]
+耗时：9
+操作人：1
+2018-09-02 15:26:17.257 [http-nio-9090-exec-1] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAll方法，
+参数列表:[]
+耗时：3
+操作人：1
+2018-09-02 15:26:17.259 [http-nio-9090-exec-3] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAllDesigner方法，
+参数列表:[]
+耗时：5
+操作人：1
+2018-09-02 15:26:17.427 [http-nio-9090-exec-5] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderController的queryOrderByBackStage方法，
+参数列表:[{"designerId":[],"maxAge":"","minAge":"","newDate":1535873177384,"orderBys":"","pageNum":1,"pageSize":25,"statusList":[10],"text":""}]
+耗时：44
+操作人：1
+2018-09-02 15:40:00.230 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018082818354000000074
+2018-09-02 15:40:00.230 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86218,ReleaseTime:2018-08-31 15:35:39,Now:2018-09-02 15:40:00
+2018-09-02 15:56:00.287 [http-nio-9090-exec-6] ERROR c.x.config.BaseExceptionHandler -系统发生异常了---------》org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:356)
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:825)
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:730)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:391)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:369)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:140)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeContent(ResourceHttpMessageConverter.java:132)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:124)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:45)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:224)
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:487)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1276)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:450)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:388)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:623)
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:116)
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:225)
+	at org.apache.coyote.Response.doWrite(Response.java:541)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+	... 87 more
+
+2018-09-02 15:56:00.748 [http-nio-9090-exec-8] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAllDesigner方法，
+参数列表:[]
+耗时：3
+操作人：1
+2018-09-02 15:56:00.751 [http-nio-9090-exec-5] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAll方法，
+参数列表:[]
+耗时：4
+操作人：1
+2018-09-02 15:56:01.306 [http-nio-9090-exec-2] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FTagsController的selectUsableCoupon方法，
+参数列表:[]
+耗时：6
+操作人：1
+2018-09-02 15:56:01.307 [http-nio-9090-exec-6] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderController的selectByOrderID方法，
+参数列表:["2017120904070600000001"]
+耗时：1
+操作人：1
+2018-09-02 15:56:01.324 [http-nio-9090-exec-4] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderItemController的findOrderFailItemsByOrderNo方法，
+参数列表:["2017120904070600000001"]
+耗时：4
+操作人：1
+2018-09-02 15:56:01.325 [http-nio-9090-exec-7] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderItemController的findOrderFailItemsByOrderNo方法，
+参数列表:["2017120904070600000001"]
+耗时：10
+操作人：1
+2018-09-02 15:56:01.346 [http-nio-9090-exec-8] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderItemController的findOrderPreviewItem方法，
+参数列表:["2017120904070600000001"]
+耗时：3
+操作人：1
+2018-09-02 15:56:01.351 [http-nio-9090-exec-5] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderController的selectByOrderID方法，
+参数列表:["2017120904070600000001"]
+耗时：1
+操作人：1
+2018-09-02 15:56:01.366 [http-nio-9090-exec-9] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FTagsController的selectUsableCoupon方法，
+参数列表:[]
+耗时：8
+操作人：1
+2018-09-02 15:56:01.421 [http-nio-9090-exec-10] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderItemController的findOrderItemsByOrderNo方法，
+参数列表:["2017120904070600000001"]
+耗时：76
+操作人：1
+2018-09-02 15:56:01.458 [http-nio-9090-exec-1] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FMemberController的getTagsByMemberId方法，
+参数列表:[1]
+耗时：2
+操作人：1
+2018-09-02 15:56:01.465 [http-nio-9090-exec-6] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FMemberController的selectFirstFMemberInfo方法，
+参数列表:[{"id":1}]
+耗时：12
+操作人：1
+2018-09-02 15:56:01.479 [http-nio-9090-exec-7] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderController的getMemberOldOrderList方法，
+参数列表:[1,1,10]
+耗时：10
+操作人：1
+2018-09-02 15:56:01.480 [http-nio-9090-exec-2] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FAddressController的getMemberAllAddress方法，
+参数列表:[1]
+耗时：13
+操作人：1
+2018-09-02 15:56:01.481 [http-nio-9090-exec-3] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FMemberController的getMemberImportInfo方法，
+参数列表:[1]
+耗时：13
+操作人：1
+2018-09-02 15:56:01.487 [http-nio-9090-exec-4] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FOrderController的getMemberOrderInfo方法，
+参数列表:[1,null]
+耗时：15
+操作人：1
+2018-09-02 15:56:01.514 [http-nio-9090-exec-5] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.RecommendProductController的getRecProductStatus方法，
+参数列表:[{"memberId":1}]
+耗时：1
+操作人：1
+2018-09-02 15:56:01.522 [http-nio-9090-exec-8] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FMatchClothController的getMemberInfoById方法，
+参数列表:[1,"2017120904070600000001"]
+耗时：5
+操作人：1
+2018-09-02 15:56:01.554 [http-nio-9090-exec-9] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.RecommendProductController的getRecProductStatus方法，
+参数列表:[{"memberId":1}]
+耗时：1
+操作人：1
+2018-09-02 15:56:01.556 [http-nio-9090-exec-1] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FMemberController的querySecondFMemberInfo方法，
+参数列表:[{"id":1}]
+耗时：3
+操作人：1
+2018-09-02 15:56:01.622 [http-nio-9090-exec-3] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FMemberController的queryThirdFMemberInfo方法，
+参数列表:[{"id":1}]
+耗时：4
+操作人：1
+2018-09-02 15:56:01.630 [http-nio-9090-exec-2] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.RecommendProductController的findRecSearchCriteriaByMemberId方法，
+参数列表:[{"memberId":1}]
+耗时：10
+操作人：1
+2018-09-02 15:56:01.691 [http-nio-9090-exec-4] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FMemberController的queryForthFMemberInfo方法，
+参数列表:[{"id":1}]
+耗时：4
+操作人：1
+2018-09-02 15:56:01.739 [http-nio-9090-exec-8] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.FMemberController的queryFifthFMemberInfo方法，
+参数列表:[{"id":1}]
+耗时：5
+操作人：1
+2018-09-02 15:56:01.869 [http-nio-9090-exec-5] INFO  c.x.c.RecommendProductController -查询耗时：166
+2018-09-02 15:56:01.870 [http-nio-9090-exec-5] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.RecommendProductController的findProduct方法，
+参数列表:[{"brand":[],"clothesColor":[],"elements":[],"memberId":1,"middleClass":[],"models":[],"name":"","pageNum":1,"pageSize":100,"productStyleCode":"","seasonList":[],"sizeList":[]}]
+耗时：166
+操作人：1
+2018-09-02 16:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 16:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 17:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 17:01:29.091 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  [1] sessions were stopped.
+2018-09-02 17:30:00.269 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018083116284000011523
+2018-09-02 17:30:00.269 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86253,ReleaseTime:2018-08-31 17:22:15,Now:2018-09-02 17:30:00
+2018-09-02 17:30:00.466 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86254,ReleaseTime:2018-08-31 17:22:45,Now:2018-09-02 17:30:00
+2018-09-02 17:30:00.560 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86256,ReleaseTime:2018-08-31 17:22:59,Now:2018-09-02 17:30:00
+2018-09-02 17:30:00.599 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86257,ReleaseTime:2018-08-31 17:23:01,Now:2018-09-02 17:30:00
+2018-09-02 17:30:00.702 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86258,ReleaseTime:2018-08-31 17:23:03,Now:2018-09-02 17:30:00
+2018-09-02 17:40:00.245 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018083116284000011523
+2018-09-02 17:40:00.245 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86261,ReleaseTime:2018-08-31 17:38:57,Now:2018-09-02 17:40:00
+2018-09-02 17:40:00.350 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018082316144100011538
+2018-09-02 17:40:00.350 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2087,ReleaseTime:2018-08-31 17:31:37,Now:2018-09-02 17:40:00
+2018-09-02 17:40:00.455 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2088,ReleaseTime:2018-08-31 17:31:44,Now:2018-09-02 17:40:00
+2018-09-02 17:40:00.526 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2089,ReleaseTime:2018-08-31 17:31:46,Now:2018-09-02 17:40:00
+2018-09-02 17:40:00.550 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2090,ReleaseTime:2018-08-31 17:31:49,Now:2018-09-02 17:40:00
+2018-09-02 17:40:00.567 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2092,ReleaseTime:2018-08-31 17:31:55,Now:2018-09-02 17:40:00
+2018-09-02 17:40:00.581 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2093,ReleaseTime:2018-08-31 17:31:57,Now:2018-09-02 17:40:00
+2018-09-02 17:40:00.592 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removePreview,子项ID:2094,ReleaseTime:2018-08-31 17:32:50,Now:2018-09-02 17:40:00
+2018-09-02 17:50:00.226 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018083116284000011523
+2018-09-02 17:50:00.227 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86262,ReleaseTime:2018-08-31 17:41:32,Now:2018-09-02 17:50:00
+2018-09-02 18:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 18:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 19:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 19:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 19:21:29.446 [http-nio-9090-exec-9] ERROR c.x.config.BaseExceptionHandler -系统发生异常了---------》org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:356)
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:825)
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:730)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:391)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:369)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:140)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeContent(ResourceHttpMessageConverter.java:132)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:124)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:45)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:224)
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:487)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1276)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:450)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:388)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:623)
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:116)
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:225)
+	at org.apache.coyote.Response.doWrite(Response.java:541)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+	... 87 more
+
+2018-09-02 20:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 20:01:29.091 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  [2] sessions were stopped.
+2018-09-02 21:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 21:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 22:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 22:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-02 23:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-02 23:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.

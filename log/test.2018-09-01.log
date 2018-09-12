@@ -1,0 +1,371 @@
+2018-09-01 00:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 00:01:29.091 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 01:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 01:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 02:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 02:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 03:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 03:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 04:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 04:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 05:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 05:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 06:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 06:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 07:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 07:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 08:00:00.739 [pool-6-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler -Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.xiaolusenlin.core.task.CreateOrderTask.autoCreateOrder(CreateOrderTask.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-01 08:00:00.792 [pool-6-thread-1] INFO  c.x.core.task.CreateOrderTask -发送短信数量：0
+2018-09-01 08:00:00.793 [pool-6-thread-1] INFO  c.x.core.task.CreateOrderTask -总数量：362
+2018-09-01 08:00:02.936 [pool-6-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler -Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl.removeItem(FOrderItemServiceImpl.java:309)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl.removeOrderItems(FOrderItemServiceImpl.java:285)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl.removeOrderItems(FOrderItemServiceImpl.java:278)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl$$FastClassBySpringCGLIB$$53b8490.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl$$EnhancerBySpringCGLIB$$2f59db07.removeOrderItems(<generated>)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl$$FastClassBySpringCGLIB$$53b8490.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.xiaolusenlin.core.service.impl.FOrderItemServiceImpl$$EnhancerBySpringCGLIB$$b9709a05.removeOrderItems(<generated>)
+	at com.xiaolusenlin.core.task.CreateOrderTask.findDepositOrder(CreateOrderTask.java:142)
+	at com.xiaolusenlin.core.task.CreateOrderTask.rollBack48hOrder(CreateOrderTask.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-01 08:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 08:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 09:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 09:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 10:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 10:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 11:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 11:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 11:29:21.835 [http-nio-9090-exec-7] ERROR c.x.config.BaseExceptionHandler -系统发生异常了---------》org.apache.catalina.connector.ClientAbortException: java.io.IOException: Connection reset by peer
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:356)
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:825)
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:730)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:391)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:369)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:140)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeContent(ResourceHttpMessageConverter.java:132)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:124)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:45)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:224)
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:487)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1276)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:450)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:388)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:623)
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:116)
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:225)
+	at org.apache.coyote.Response.doWrite(Response.java:541)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+	... 87 more
+
+2018-09-01 11:29:22.593 [http-nio-9090-exec-6] ERROR c.x.config.BaseExceptionHandler -系统发生异常了---------》org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:356)
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:825)
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:730)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:391)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:369)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:140)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeContent(ResourceHttpMessageConverter.java:132)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:124)
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:45)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:224)
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:487)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1276)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:450)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:388)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:623)
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:116)
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:225)
+	at org.apache.coyote.Response.doWrite(Response.java:541)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+	... 87 more
+
+2018-09-01 12:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 12:01:29.091 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  [1] sessions were stopped.
+2018-09-01 13:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 13:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 14:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 14:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 15:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 15:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 15:56:20.441 [http-nio-9090-exec-1] INFO  o.a.coyote.http11.Http11Processor -Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:687)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-01 16:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 16:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 16:15:00.293 [pool-6-thread-1] INFO  com.xiaolusenlin.core.task.SmsTask -短信发送成功：{"id":1411,"memberId":11197,"phone":"13096929283","smsTemplate":"SMS_138073243","sourceCode":"2018082114552100011197"}
+2018-09-01 17:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 17:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 17:27:00.131 [pool-6-thread-1] INFO  com.xiaolusenlin.core.task.SmsTask -短信发送成功：{"id":1617,"memberId":11199,"phone":"13524903242","smsTemplate":"SMS_138073309","sourceCode":""}
+2018-09-01 18:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 18:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 18:11:08.338 [http-nio-9090-exec-1] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAll方法，
+参数列表:[]
+耗时：57
+操作人：0
+2018-09-01 18:11:08.403 [http-nio-9090-exec-10] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAllDesigner方法，
+参数列表:[]
+耗时：115
+操作人：0
+2018-09-01 18:11:13.712 [http-nio-9090-exec-4] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAllDesigner方法，
+参数列表:[]
+耗时：9
+操作人：0
+2018-09-01 18:11:13.723 [http-nio-9090-exec-9] INFO  c.xiaolusenlin.interceptor.LogAspect -
+调用com.xiaolusenlin.controller.UserController的findAll方法，
+参数列表:[]
+耗时：2
+操作人：0
+2018-09-01 19:00:00.309 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2017120905121000000005
+2018-09-01 19:00:00.310 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86062,ReleaseTime:2018-08-30 18:59:37,Now:2018-09-01 19:00:00
+2018-09-01 19:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 19:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 19:11:00.136 [pool-6-thread-1] INFO  com.xiaolusenlin.core.task.SmsTask -短信发送成功：{"id":1414,"memberId":11523,"phone":"18013506590","smsTemplate":"SMS_138073243","sourceCode":"2018082219080500011523"}
+2018-09-01 19:30:00.284 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018082818354000000074
+2018-09-01 19:30:00.285 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86018,ReleaseTime:2018-08-30 19:26:37,Now:2018-09-01 19:30:00
+2018-09-01 19:30:00.358 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86027,ReleaseTime:2018-08-30 19:26:37,Now:2018-09-01 19:30:00
+2018-09-01 19:30:00.397 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86041,ReleaseTime:2018-08-30 19:26:37,Now:2018-09-01 19:30:00
+2018-09-01 19:30:00.434 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86063,ReleaseTime:2018-08-30 19:26:37,Now:2018-09-01 19:30:00
+2018-09-01 19:30:00.515 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86064,ReleaseTime:2018-08-30 19:26:37,Now:2018-09-01 19:30:00
+2018-09-01 19:54:00.099 [pool-6-thread-1] INFO  com.xiaolusenlin.core.task.SmsTask -短信发送成功：{"id":1417,"memberId":11523,"phone":"18013506590","smsTemplate":"SMS_138073243","sourceCode":"2018082219514000011523"}
+2018-09-01 20:00:00.266 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -订单搭配超时，开始释放订单：2018082818354000000074
+2018-09-01 20:00:00.266 [pool-6-thread-1] INFO  c.x.core.task.ReleaseItemTask -释放类型:removeItem,子项ID:86065,ReleaseTime:2018-08-30 19:57:12,Now:2018-09-01 20:00:00
+2018-09-01 20:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 20:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 21:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 21:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 22:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 22:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.
+2018-09-01 23:01:29.089 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Validating all active sessions...
+2018-09-01 23:01:29.090 [SessionValidationThread-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager -Finished session validation.  No sessions were stopped.

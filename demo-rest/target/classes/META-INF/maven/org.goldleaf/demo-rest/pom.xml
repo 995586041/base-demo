@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.goldleaf</groupId>
+		<artifactId>base-demo</artifactId>
+		<version>v1</version>
+	</parent>
+
+	<artifactId>demo-rest</artifactId>
+	<name>demo-rest</name>
+	<description>demo-rest</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.goldleaf</groupId>
+			<artifactId>demo-service</artifactId>
+			<version>v1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<configuration>
+    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
+    <property name="LOG_HOME" value="/logs" />
+     <!-- windows记录文件到特定目录 -->
+	 <property name="log.window" value="G:/logs" />
+	 <property name="log.linux" value="/home/logs" />
+    
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+
+	<!-- 本地日志文件 -->
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<Prudent>true</Prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${log.window}/logFile.%d{yyyy-MM-dd}.log</FileNamePattern>
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>3GB</totalSizeCap>
+		</rollingPolicy>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss} -%msg%n</Pattern>
+		</layout>
+		<encoder>
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<!-- Logstash日志 -->
+	<appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+		<!-- 远程Logstash的IP：PORT -->
+		<destination>127.0.0.1:4560</destination>
+		<!-- encoder必须要有，是logback和logstash的纽带 -->
+		<encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder">
+			<!-- 用户自定义Json字符串，用于向logstash提交额外的自定义属性。可在logstash的input里接收该参数 -->
+			<customFields>{"appName":"testelk"}</customFields>
+		</encoder>
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="LOGSTASH" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>

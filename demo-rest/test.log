@@ -1,0 +1,138 @@
+2018-09-11 10:30:46.265  INFO 5764 --- [main] org.goldleaf.StartApplication            : Starting StartApplication on DESKTOP-5LBSRPK with PID 5764 (F:\workplace\sts\base-demo\demo-rest\target\classes started by PC in F:\workplace\sts\base-demo\demo-rest)
+2018-09-11 10:30:46.282  INFO 5764 --- [main] org.goldleaf.StartApplication            : No active profile set, falling back to default profiles: default
+2018-09-11 10:30:46.316  INFO 5764 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77659b30: startup date [Tue Sep 11 10:30:46 CST 2018]; root of context hierarchy
+2018-09-11 10:30:47.347  INFO 5764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bffb7e7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-11 10:30:48.181  INFO 5764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2018-09-11 10:30:48.212  INFO 5764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-11 10:30:48.212  INFO 5764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-11 10:30:48.228  INFO 5764 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;F:\soft\Git\cmd;F:\soft\apache-maven-3.5.4\bin;F:\soft\node\;F:\soft\mq\erlang\erl10.0.1\bin;F:\soft\xuniji\vagrant\bin;F:\soft\mq\rabbitmq\rabbitmq_server-3.7.7\sbin;F:\dev-soft\Redis\;F:\dev-soft\python3.6;F:\Program Files (x86)\Tesseract-OCR;F:\dev-soft\elk\elasticsearch-6.3.2\bin;C:\Program Files\Java\jdk1.8.0_171\bin;F:\dev-soft\elk\logstash-6.3.2\bin;F:\dev-soft\elk\elasticsearch-6.3.2\bin;F:\dev-soft\elk\kibana-6.3.2-windows-x86_64\bin;F:\dev-soft\python3.6\Scripts\;F:\dev-soft\python3.6\;F:\python\Scripts\;F:\python\;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Roaming\npm;F:\dev-soft\spring-tool-suite-3.9.5.RELEASE-e4.8.0-win32-x86_64\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-09-11 10:30:48.368  INFO 5764 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-11 10:30:48.369  INFO 5764 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2053 ms
+2018-09-11 10:30:48.465  INFO 5764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-11 10:30:48.465  INFO 5764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-11 10:30:48.465  INFO 5764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-11 10:30:48.465  INFO 5764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-11 10:30:48.465  INFO 5764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-11 10:30:48.855  INFO 5764 --- [main] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2018-09-11 10:30:48.855  INFO 5764 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-09-11 10:30:48.855  INFO 5764 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-09-11 10:30:48.855  INFO 5764 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-09-11 10:30:48.855  INFO 5764 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-09-11 10:30:48.871  INFO 5764 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-09-11 10:30:49.869  INFO 5764 --- [main] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2018-09-11 10:30:50.445 ERROR 5764 --- [main] .d.e.r.s.AbstractElasticsearchRepository : failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: No type specified for field [name]
+2018-09-11 10:30:51.023  INFO 5764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:30:51.336  INFO 5764 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77659b30: startup date [Tue Sep 11 10:30:46 CST 2018]; root of context hierarchy
+2018-09-11 10:30:51.430  INFO 5764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/es/delete],methods=[GET]}" onto public java.lang.Object org.goldleaf.rest.es.TestEsRestImpl.deleteInfoFromEs(java.lang.Integer)
+2018-09-11 10:30:51.430  INFO 5764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/es/get/{id}],methods=[GET]}" onto public java.lang.Object org.goldleaf.rest.es.TestEsRestImpl.getInfoFromEs(java.lang.Integer)
+2018-09-11 10:30:51.430  INFO 5764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/es/add],methods=[POST]}" onto public java.lang.String org.goldleaf.rest.es.TestEsRestImpl.addInfoToEs(org.goldleaf.entity.es.TestEsBean)
+2018-09-11 10:30:51.430  INFO 5764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eslog/test],methods=[GET]}" onto public void org.goldleaf.rest.es.TestLogToEsRestImpl.test()
+2018-09-11 10:30:51.430  INFO 5764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/{userId}],methods=[GET]}" onto public java.lang.Object org.goldleaf.rest.TestRestImpl.test(java.lang.Integer)
+2018-09-11 10:30:51.430  INFO 5764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-11 10:30:51.430  INFO 5764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-11 10:30:51.477  INFO 5764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:30:51.477  INFO 5764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:30:51.867  INFO 5764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-11 10:30:51.867  INFO 5764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-11 10:30:51.867  INFO 5764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-11 10:30:51.883  INFO 5764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2018-09-11 10:30:51.898  INFO 5764 --- [main] org.goldleaf.StartApplication            : Started StartApplication in 5.962 seconds (JVM running for 6.628)
+2018-09-11 10:30:55.364  INFO 5764 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-11 10:30:55.365  INFO 5764 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-11 10:30:55.387  INFO 5764 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-09-11 10:30:55.416  INFO 5764 --- [http-nio-9999-exec-2] org.goldleaf.aop.LogAspect               : -------------------用户发起请求-----------------
+2018-09-11 10:30:55.416  INFO 5764 --- [http-nio-9999-exec-2] org.goldleaf.aop.LogAspect               : URL : http://localhost:9999/eslog/test
+2018-09-11 10:30:55.416  INFO 5764 --- [http-nio-9999-exec-2] org.goldleaf.aop.LogAspect               : HTTP_METHOD : GET
+2018-09-11 10:30:55.416  INFO 5764 --- [http-nio-9999-exec-2] org.goldleaf.aop.LogAspect               : HTTP_HEAD Type : null
+2018-09-11 10:30:55.416  INFO 5764 --- [http-nio-9999-exec-2] org.goldleaf.aop.LogAspect               : IP : 0:0:0:0:0:0:0:1
+2018-09-11 10:30:55.418  INFO 5764 --- [http-nio-9999-exec-2] org.goldleaf.aop.LogAspect               : CLASS_METHOD : org.goldleaf.rest.es.TestLogToEsRestImpl.test
+2018-09-11 10:30:55.424  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : infoc6f65534-867a-41a3-9d04-4e40b0034d34
+2018-09-11 10:30:55.424 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorfbe47403-108d-4ca9-9403-1801ce96a541
+2018-09-11 10:30:55.424  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info53555d24-e5c1-49b1-80cf-f7fa952736e6
+2018-09-11 10:30:55.424 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorda0524bb-3b92-4e2d-9849-53965037c628
+2018-09-11 10:30:55.424  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : infod940ecb4-7b36-402c-8dd1-5fe1cdb383c8
+2018-09-11 10:30:55.424 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorf81f871e-8fc7-44ef-8e91-12d844f486d6
+2018-09-11 10:30:55.424  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : infoa9bd846a-b25a-4841-a121-fcaed3bb8361
+2018-09-11 10:30:55.424 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error16e09038-3ba1-4641-93d7-59fec3756ee2
+2018-09-11 10:30:55.424  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info2d7cff69-5965-4c8e-8cc8-79af36318694
+2018-09-11 10:30:55.424 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error6e822306-b71e-4e15-88f6-2dca4934f17a
+2018-09-11 10:30:55.425  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info47fbbcd8-423f-49a0-a993-686f754d359a
+2018-09-11 10:30:55.425 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : errore6d4988b-21fe-4f7e-9567-d3aa87c0fe05
+2018-09-11 10:30:55.425  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info93c4007b-732f-400a-8cd4-344c94bdd1af
+2018-09-11 10:30:55.425 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorb931b30d-dd2e-4f2e-b4f6-0b416ee20348
+2018-09-11 10:30:55.425  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info6f3dddd9-c4c0-4150-8c1a-768baa3d3dca
+2018-09-11 10:30:55.425 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error9aaa8cc5-f218-4c84-ad77-81c2a9bf5815
+2018-09-11 10:30:55.425  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info936001ed-8f8d-48bb-b2bc-1b98753cd0f0
+2018-09-11 10:30:55.425 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error8e1ceac7-8eb1-430e-b837-9d2c418bfa3d
+2018-09-11 10:30:55.425  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : infocf722c3b-1bae-46d1-91b1-0d1af3cdb316
+2018-09-11 10:30:55.425 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error1004aaa6-9d61-4485-8c83-198d4b3b4d58
+2018-09-11 10:30:55.425  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info1555e719-8ff6-4bc7-bdd1-1ca6f39a714a
+2018-09-11 10:30:55.425 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : errora89e7ff7-9f26-4ef5-92d6-70733d74ba28
+2018-09-11 10:30:55.426  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info3e58ecb4-12b9-4de2-9c39-3fdb46c58378
+2018-09-11 10:30:55.426 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : erroree988c08-4270-4b98-b517-7a35063eb14c
+2018-09-11 10:30:55.426  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : infob7cfc89e-3095-4dfe-a7f2-8a7eaf06c1af
+2018-09-11 10:30:55.426 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error878c3a37-bd6f-4ca5-9b1b-ba0ab8134bfb
+2018-09-11 10:30:55.426  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info7d51ae0f-73eb-4469-bccf-83c53fd74582
+2018-09-11 10:30:55.426 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error26783b26-679c-4354-a8fd-04aae0491963
+2018-09-11 10:30:55.426  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info40a4e51d-9981-4752-911b-49a9670fb52b
+2018-09-11 10:30:55.426 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error28ee9d72-712c-47b7-b439-2ee7238fe8ff
+2018-09-11 10:30:55.426  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info4fee54d0-14bf-4379-82e8-4df63f85daac
+2018-09-11 10:30:55.426 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error5d47241b-9426-4f17-a028-736716d6f247
+2018-09-11 10:30:55.426  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info3f30dc9f-1ecd-44bf-8420-0b8e3df96842
+2018-09-11 10:30:55.426 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error68729fb4-476a-4d6b-8b5a-595941689ec3
+2018-09-11 10:30:55.426  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : infoc00408f7-7a2d-4f9d-986e-937691ff9d43
+2018-09-11 10:30:55.426 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorb191e064-bddf-40b0-bc5a-ca8c1225c99f
+2018-09-11 10:30:55.427  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : info5716743f-5cc1-4b9c-bc6b-2a54e7e52b3a
+2018-09-11 10:30:55.427 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error9f2cbfb2-61ea-47a1-9ba5-418795bd3111
+2018-09-11 10:30:55.427  INFO 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : infob13b3750-d79e-46a5-8d93-26229a212a0a
+2018-09-11 10:30:55.427 ERROR 5764 --- [http-nio-9999-exec-2] o.goldleaf.rest.es.TestLogToEsRestImpl   : error73e74a0c-d408-4031-8e2d-b61d2b6dbb15
+2018-09-11 10:30:55.427  INFO 5764 --- [http-nio-9999-exec-2] org.goldleaf.aop.LogAspect               : 方法的返回值 : null
+2018-09-11 10:30:55.427  INFO 5764 --- [http-nio-9999-exec-2] org.goldleaf.aop.LogAspect               : ------------------请求结束------------------
+2018-09-11 10:32:15.896  INFO 5764 --- [http-nio-9999-exec-4] org.goldleaf.aop.LogAspect               : -------------------用户发起请求-----------------
+2018-09-11 10:32:15.896  INFO 5764 --- [http-nio-9999-exec-4] org.goldleaf.aop.LogAspect               : URL : http://localhost:9999/eslog/test
+2018-09-11 10:32:15.896  INFO 5764 --- [http-nio-9999-exec-4] org.goldleaf.aop.LogAspect               : HTTP_METHOD : GET
+2018-09-11 10:32:15.896  INFO 5764 --- [http-nio-9999-exec-4] org.goldleaf.aop.LogAspect               : HTTP_HEAD Type : null
+2018-09-11 10:32:15.896  INFO 5764 --- [http-nio-9999-exec-4] org.goldleaf.aop.LogAspect               : IP : 0:0:0:0:0:0:0:1
+2018-09-11 10:32:15.896  INFO 5764 --- [http-nio-9999-exec-4] org.goldleaf.aop.LogAspect               : CLASS_METHOD : org.goldleaf.rest.es.TestLogToEsRestImpl.test
+2018-09-11 10:32:15.896  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : infoa828b661-1042-453f-af37-fdbf8b9ea832
+2018-09-11 10:32:15.896 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : erroraba569c1-038e-4583-9242-596d0283a112
+2018-09-11 10:32:15.896  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info6ad87ec9-1490-4020-838a-434c3e622e0a
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorc20e532f-38b6-43af-8b25-473ac19fd2a1
+2018-09-11 10:32:15.897  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info0081e361-7c1b-4a84-9e5e-e67552bfb896
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error317507c0-60dc-4136-a1d3-e42475eb3b21
+2018-09-11 10:32:15.897  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info51aea541-f1ba-4326-94c8-500403d4e438
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorcf9b2f8c-c0dc-4a84-91db-57cfdd8af940
+2018-09-11 10:32:15.897  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info56cb6faa-8984-4f66-a017-c679973dc8bf
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorda5591cb-37ac-4add-8924-2787c9a81968
+2018-09-11 10:32:15.897  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info2033860d-6b64-48f0-b656-123f45e9c64d
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error50ff8771-9f7d-4643-8d9e-4c0183f68c2b
+2018-09-11 10:32:15.897  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info3b90b2ca-136e-4bbd-8020-55c2e9b816b1
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error6fb8f59c-cee6-41df-a463-68a7d1976154
+2018-09-11 10:32:15.897  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : infofca3ff05-bfb2-4fda-bf0c-6c886df9d56a
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : errore13bd585-83ee-42d0-96be-cd100c903fd6
+2018-09-11 10:32:15.897  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info3d6401a5-ecaa-432d-a63f-cd7d889a547a
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error2321dddf-5c92-4252-a1ab-7a07f7478968
+2018-09-11 10:32:15.897  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info028b2d31-cadc-4ce8-9328-e7fb2cf7d4d4
+2018-09-11 10:32:15.897 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : errordf8fb5ce-2b10-4549-a994-f791d7636889
+2018-09-11 10:32:15.898  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : infofb0f8a82-ab16-4973-9a3c-c89bd5550676
+2018-09-11 10:32:15.898 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error3e861e6d-1441-48d7-840f-4e153f049314
+2018-09-11 10:32:15.898  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info31953709-623c-4c39-a237-c55bb380eefd
+2018-09-11 10:32:15.898 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error9aea1a2d-5efc-4e2b-93e5-e8090559041f
+2018-09-11 10:32:15.898  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : infoa4843f25-b82f-4875-86fd-b1f87dde6db3
+2018-09-11 10:32:15.898 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error873f0d49-b606-4314-a98a-183a6d61d1ed
+2018-09-11 10:32:15.898  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : infoe11a4944-9146-465b-8c87-1e9d953c1508
+2018-09-11 10:32:15.898 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error86146a03-f17a-4b25-a72c-94706cb63765
+2018-09-11 10:32:15.898  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info9e0ff3eb-12f0-4dde-9f63-7115c9092832
+2018-09-11 10:32:15.898 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error7ec4118b-1189-4bd5-b260-3524c907897d
+2018-09-11 10:32:15.898  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info942d1144-2b3b-4b12-aab2-bfc046dca777
+2018-09-11 10:32:15.898 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : errora9ef450f-0b0d-4453-a38f-67dca04c4701
+2018-09-11 10:32:15.898  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : infobdf0232b-ca51-4e1a-9432-ca678a7ea2e7
+2018-09-11 10:32:15.898 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : errorf6e986b0-88a6-47aa-b327-3d071fae3067
+2018-09-11 10:32:15.898  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : infoff6f76ec-2f36-4b4a-a31f-13df2857da96
+2018-09-11 10:32:15.898 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : errord6534188-db35-4fe0-81f2-8184a1da3351
+2018-09-11 10:32:15.899  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info68ba08df-d6bd-417e-8149-905ffd398e27
+2018-09-11 10:32:15.899 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error869c54b1-baae-47a2-a617-f43e42018eb7
+2018-09-11 10:32:15.899  INFO 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : info01edde12-cb50-477c-b6f4-0d2eeb2b6eec
+2018-09-11 10:32:15.899 ERROR 5764 --- [http-nio-9999-exec-4] o.goldleaf.rest.es.TestLogToEsRestImpl   : error78f6ece3-b07f-43da-ac80-acf52dddd2f1
+2018-09-11 10:32:15.899  INFO 5764 --- [http-nio-9999-exec-4] org.goldleaf.aop.LogAspect               : 方法的返回值 : null
+2018-09-11 10:32:15.899  INFO 5764 --- [http-nio-9999-exec-4] org.goldleaf.aop.LogAspect               : ------------------请求结束------------------
